@@ -1,4 +1,4 @@
-package methodsandblocks;
+package blocks;
 
 public class Blocks2 {
     static String companyName;

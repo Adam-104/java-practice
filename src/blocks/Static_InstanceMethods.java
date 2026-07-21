@@ -1,4 +1,4 @@
-package methodsandblocks;
+package blocks;
 
 public class Static_InstanceMethods {
     static Static_InstanceMethods obj = new Static_InstanceMethods();

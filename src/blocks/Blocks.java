@@ -1,4 +1,4 @@
-package methodsandblocks;
+package blocks;
 
 public class Blocks{
     //order of execution when there are static and instance blocks and one main method in our program:
