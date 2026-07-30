@@ -18,10 +18,10 @@ public class TernaryOperators {
         System.out.print("Enter Marks : ");
         double marks =  scanner.nextDouble();
         String result = (marks >= 90) ? "A"               // nested ternary operator
-                    : (marks >= 75) ? "B"
-                      : (marks >= 60) ? "C"
-                        : (marks >= 40) ? "D"
-                          : "Fail";
+                : (marks >= 75) ? "B"
+                  : (marks >= 60) ? "C"
+                    : (marks >= 40) ? "D"
+                      : "Fail";
         System.out.println("Result of the Student : " + result);
         System.out.println("-------------------------");
 
@@ -29,9 +29,9 @@ public class TernaryOperators {
         System.out.print("Enter your Character : ");
         char ch = scanner.next().charAt(0);
         String number = (ch == 'a' || ch == 'e' || ch == 'i' || ch == 'o' || ch == 'u'
-                        || ch == 'A' || ch == 'E' || ch == 'I' || ch == 'O' || ch == 'U')
-                        ? "vowel"
-                        : "consonant";
+                || ch == 'A' || ch == 'E' || ch == 'I' || ch == 'O' || ch == 'U')
+                ? "vowel"
+                : "consonant";
 
         //simple calculator using ternary operator
         System.out.println(ch + " is a " + number);
@@ -47,10 +47,10 @@ public class TernaryOperators {
         char operator = scanner.next().charAt(0);
 
         double output = (operator == '+') ? x + y
-                        : (operator == '-') ? x - y
-                        : (operator == '*') ? x * y
-                        : (operator == '/') ? x / y
-                        : (operator == '%') ? x % y
+                : (operator == '-') ? x - y
+                  : (operator == '*') ? x * y
+                    : (operator == '/') ? x / y
+                      : (operator == '%') ? x % y
                         : Double.NaN;
 
         System.out.println("calculated value of " + x + operator + y + " is " + output);
