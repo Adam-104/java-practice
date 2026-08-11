@@ -73,7 +73,6 @@ public class BankTransaction {
 
     }
 
-
     public void display() {
         System.out.println("----------------------------");
         System.out.println("Final Balance : " + currenBalance);
