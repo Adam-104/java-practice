@@ -11,7 +11,7 @@ import java.util.Scanner;
 public class BankTransaction {
     static Scanner scanner = new Scanner(System.in);
 
-    double currenBalance = 10000;
+    double currentBalance = 10000;
     double totalDeposited = 0;
     double totalWithdrawn = 0;
     double depositAmount;
@@ -37,7 +37,6 @@ public class BankTransaction {
                 case 0:
                     System.out.println("Thank you for using Bank Transaction");
                     break;
-
                 default:
                     System.out.println("Invalid choice");
             }
@@ -48,7 +47,7 @@ public class BankTransaction {
         System.out.print("Enter amount to deposit : ");
         depositAmount = scanner.nextDouble();
 
-        currenBalance += depositAmount;
+        currentBalance += depositAmount;
         totalDeposited += depositAmount;
 
         System.out.println("You have deposited " + depositAmount + ".");
@@ -60,11 +59,11 @@ public class BankTransaction {
         System.out.print("Enter amount to withdraw : ");
         withdrawAmount = scanner.nextDouble();
 
-        if (withdrawAmount > currenBalance) {
+        if (withdrawAmount > currentBalance) {
             System.out.println("Insufficient Balance.");
             System.out.println("-------------------------");
         } else {
-            currenBalance -= withdrawAmount;
+            currentBalance -= withdrawAmount;
             totalWithdrawn += withdrawAmount;
             System.out.println("You have withdrawn " + withdrawAmount + ".");
             System.out.println("-------------------------");
@@ -75,7 +74,7 @@ public class BankTransaction {
 
     public void display() {
         System.out.println("----------------------------");
-        System.out.println("Final Balance : " + currenBalance);
+        System.out.println("Final Balance : " + currentBalance);
         System.out.println("Total deposited Amount : " + totalDeposited);
         System.out.println("Total withdrawn Amount : " + totalWithdrawn);
         System.out.println("----------------------------");
