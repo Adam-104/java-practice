@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class HappyNumber {
     static Scanner scanner = new Scanner(System.in);
 
-    public boolean happyNumber(int number) {
+    public boolean happyNumber(int number){
 
         while(number > 9){
             int sum = 0;
