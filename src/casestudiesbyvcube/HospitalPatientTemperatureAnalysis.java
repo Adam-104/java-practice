@@ -18,6 +18,7 @@ public class HospitalPatientTemperatureAnalysis {
         float highestTemperature = patientTemperatures[0];
         float lowestTemperature = patientTemperatures[0];
         int feverCount = 0;
+        double average = averageTemperature(patientTemperatures);
         for (int i = 0; i < patientTemperatures.length; i++) {
             if (patientTemperatures[i] > highestTemperature) {
                 highestTemperature = patientTemperatures[i];
@@ -30,10 +31,20 @@ public class HospitalPatientTemperatureAnalysis {
             }
         }
 
-        System.out.printf("Highest temperature: %f\n", highestTemperature);
-        System.out.printf("Lowest temperature: %f\n", lowestTemperature);
-        System.out.printf("Fever count: %d\n", feverCount);
-        System.out.println("Average temperature: " + (highestTemperature + lowestTemperature) / patientTemperatures.length);
+        System.out.printf("Highest temperature : %f\n", highestTemperature);
+        System.out.printf("Lowest temperature : %f\n", lowestTemperature);
+        System.out.println("Fever count : " + feverCount);
+        System.out.println("Average temperature : " + average);
+    }
+
+    public double averageTemperature(float[] patientTemperatures) {
+        int sum = 0;
+        double average = 0.0;
+        for (int i = 0; i < patientTemperatures.length; i++) {
+            sum += patientTemperatures[i];
+        }
+        average = sum / patientTemperatures.length;
+        return average;
     }
 
     public static void main(String[] args) {
