@@ -4,7 +4,7 @@ package oops.encapsulation.example3;
 
 
 public class Shopping {
-    static void main() {
+    public static void main(String[] args) {
         ShoppingCart cart = new ShoppingCart();
         cart.addItemToCart(5000);
         cart.addItemToCart(2000);
