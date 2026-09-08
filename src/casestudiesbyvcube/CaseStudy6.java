@@ -34,11 +34,11 @@ class Receptionist extends Employee{
 
 public class CaseStudy6 {
     public static void main(String[] args) {
-        Employee e1 = new Doctor();
-        Employee e2 = new Nurse();
-        Employee e3 = new Receptionist();
-        e1.work();
-        e2.work();
-        e3.work();
+        Employee doctor = new Doctor();
+        Employee nurse = new Nurse();
+        Employee receptionist = new Receptionist();
+        doctor.work();
+        nurse.work();
+        receptionist.work();
     }
 }
